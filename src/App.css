@@ -1,0 +1,36 @@
+ul li {
+    list-style-type: none;
+}
+
+.header__logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.app__wrapper {
+    display: grid;
+    margin: 0 auto;
+    width: 1200px;
+    grid-template-areas: "h h " "m c";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+
+.header {
+    background-color: green;
+    grid-area: h;
+}
+
+.sidebar__menu {
+    background-color: burlywood;
+    grid-area: m;
+}
+
+.content {
+    background-color: cornflowerblue;
+    grid-area: c;
+}
+
+.content__img {
+    max-width: 100%;
+}
